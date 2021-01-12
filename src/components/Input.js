@@ -1,12 +1,18 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import {View, TextInput} from 'react-native';
+
+import {input} from './styles'
 
 const Input = (props) => {
   return (
-    <View>
-      <Text>Input</Text>
+    <View style={input.container}>
+      <TextInput 
+        style={input.textInput}
+        {...props.inputProps}
+        onChangeText={props.onType}
+      />
     </View>
   );
 };
 
-export { Input };
+export {Input};

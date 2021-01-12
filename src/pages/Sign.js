@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   SafeAreaView,
   View,
@@ -9,8 +9,8 @@ import {
   KeyboardAvoidingView,
 } from 'react-native';
 
-import {authStyle} from './styles';
-import {Input, Button} from '../components';
+import { authStyle } from './styles';
+import { Input, Button } from '../components';
 import auth from '@react-native-firebase/auth';
 
 const Sign = (props) => {
@@ -26,25 +26,25 @@ const Sign = (props) => {
         await auth().createUserWithEmailAndPassword(email, password);
         props.navigation.goBack();
       } catch (error) {
-        Alert.alert('ClarusChat', 'An error occured');
+        Alert.alert('DNZ Free Chat', 'An error occured');
       }
     } else {
-      Alert.alert('ClarusChat', 'Passwords are not match');
+      Alert.alert('DNZ Free Chat', 'Passwords are not match');
     }
   }
 
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <KeyboardAvoidingView style={{flex: 1, backgroundColor: '#cfd8dc'}}>
-        <ScrollView contentContainerStyle={{flex: 1}}>
+    <SafeAreaView style={{ flex: 1 }}>
+      <KeyboardAvoidingView style={{ flex: 1, backgroundColor: '#cfd8dc' }}>
+        <ScrollView contentContainerStyle={{ flex: 1 }}>
           <View style={authStyle.container}>
             <Image
               style={authStyle.logo}
-              source={require('../assets/logo.jpeg')}
+              source={require('../assets/logo.png')}
             />
-            <Text style={authStyle.logoText}>ClarusChat</Text>
+            <Text style={authStyle.logoText}>Free Chat</Text>
           </View>
-          <View style={{flex: 1}}>
+          <View style={{ flex: 1 }}>
             <Input
               inputProps={{
                 placeholder: 'Type your e-mail address..',
@@ -79,4 +79,4 @@ const Sign = (props) => {
   );
 };
 
-export {Sign};
+export { Sign };
