@@ -36,4 +36,4 @@
 
 ![Project 000 Snapshot](./images/03.jpg)
 
-![Project 000 Snapshot](./images/04.png)
+![Project 000 Snapshot](./images/04.jpg)
