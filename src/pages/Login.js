@@ -19,10 +19,7 @@ const Login = (props) => {
   const [password, setPassword] = useState('');
 
   async function login() {
-    // auth()
-    //   .signInWithEmailAndPassword(email, password)
-    //   .then(() => alert("OK"))
-    //   .catch((err) => Alert.alert("ClarusChat", resolveAuthError(err.code)));
+
     try {
       if (email === '' || password === '') {
         Alert.alert('DNZ Free Chat', resolveAuthError('auth/null-value'));
