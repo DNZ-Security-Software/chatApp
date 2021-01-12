@@ -1,4 +1,4 @@
-import {StyleSheet, Dimensions} from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 export const authStyle = StyleSheet.create({
   container: {
@@ -11,15 +11,15 @@ export const authStyle = StyleSheet.create({
     resizeMode: 'contain',
   },
   logoText: {
-      color: 'purple',
-      fontSize: 35,
-      fontWeight: 'bold'
-  }
+    color: '#0966B2',
+    fontSize: 35,
+    fontWeight: 'bold',
+  },
 });
 
 export const timelinePage = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#cfd8dc'
+    backgroundColor: '#cfd8dc',
   },
 });

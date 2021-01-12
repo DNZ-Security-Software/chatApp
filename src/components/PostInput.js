@@ -1,8 +1,8 @@
 import React from 'react';
-import {View, TextInput, Text, TouchableOpacity} from 'react-native';
+import { View, TextInput, Text, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import {post_input} from './styles';
+import { post_input } from './styles';
 
 const PostInput = (props) => {
   const [postText, setPostText] = React.useState('');
@@ -17,12 +17,12 @@ const PostInput = (props) => {
         />
       </View>
       <TouchableOpacity
-        style={{justifyContent: 'center'}}
+        style={{ justifyContent: 'center' }}
         onPress={() => props.onSendPost(postText)}>
-        <Icon name="telegram" size={30} color="#69007f" />
+        <Icon name="telegram" size={30} color="#0966B2" />
       </TouchableOpacity>
     </View>
   );
 };
 
-export {PostInput};
+export { PostInput };

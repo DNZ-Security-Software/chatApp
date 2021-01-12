@@ -1,8 +1,8 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import {header} from './styles';
+import { header } from './styles';
 
 const Header = (props) => {
   return (
@@ -10,25 +10,20 @@ const Header = (props) => {
       <View style={header.textContainer}>
         <Text style={header.text}>#{props.title}</Text>
       </View>
-      <View style={{justifyContent: 'center', flexDirection: 'row'}}>
+      <View style={{ justifyContent: 'center', flexDirection: 'row' }}>
         <Icon
           name="hexagon-multiple"
           size={30}
-          color="#69007f"
+          color="blue"
           onPress={props.onTopicModalSelect}
           style={{
-            marginRight: 10
+            marginRight: 10,
           }}
         />
-        <Icon 
-          name="login" 
-          size={30} 
-          color="#69007f"
-          onPress={props.onLogOut}
-        />
+        <Icon name="login" size={30} color="blue" onPress={props.onLogOut} />
       </View>
     </View>
   );
 };
 
-export {Header};
+export { Header };
