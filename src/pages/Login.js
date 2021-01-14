@@ -14,7 +14,7 @@ import { Input, Button } from '../components';
 import { resolveAuthError } from '../functions';
 import auth from '@react-native-firebase/auth';
 
-const Login = (props) => {
+const Login = (props) => { 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -22,13 +22,14 @@ const Login = (props) => {
 
     try {
       if (email === '' || password === '') {
-        Alert.alert('DNZ Free Chat', resolveAuthError('auth/null-value'));
+        Alert.alert('DNZSec Free Chat', resolveAuthError('auth/null-value'));
       } else {
         await auth().signInWithEmailAndPassword(email, password);
+       4
         props.navigation.navigate('Timeline');
       }
     } catch (error) {
-      Alert.alert('DNZ Free Chat', resolveAuthError(error.code));
+      Alert.alert('DNZSec Free Chat', resolveAuthError(error.code));
     }
   }
 
