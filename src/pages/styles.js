@@ -14,6 +14,7 @@ export const authStyle = StyleSheet.create({
     color: '#0966B2',
     fontSize: 35,
     fontWeight: 'bold',
+    padding: 30,
   },
 });
 
