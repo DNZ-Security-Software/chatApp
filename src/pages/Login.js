@@ -1,3 +1,7 @@
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable react-native/no-inline-styles */
 import React, { useState } from 'react';
 import {
   SafeAreaView,
@@ -14,18 +18,17 @@ import { Input, Button } from '../components';
 import { resolveAuthError } from '../functions';
 import auth from '@react-native-firebase/auth';
 
-const Login = (props) => { 
+const Login = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   async function login() {
-
     try {
       if (email === '' || password === '') {
         Alert.alert('DNZSec Free Chat', resolveAuthError('auth/null-value'));
       } else {
         await auth().signInWithEmailAndPassword(email, password);
-       4
+        4;
         props.navigation.navigate('Timeline');
       }
     } catch (error) {

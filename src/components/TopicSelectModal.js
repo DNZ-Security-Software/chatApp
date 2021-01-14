@@ -1,8 +1,12 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import Modal from 'react-native-modal';
 
-import {topicModal} from './styles';
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable react-native/no-inline-styles */
+import { topicModal } from './styles';
 
 const topics = ['fullstack', 'data-science', 'gaming', 'mobile', 'random'];
 
@@ -29,4 +33,4 @@ const TopicSelectModal = (props) => {
   );
 };
 
-export {TopicSelectModal};
+export { TopicSelectModal };

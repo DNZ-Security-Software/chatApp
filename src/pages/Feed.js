@@ -1,3 +1,7 @@
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/self-closing-comp */
+/* eslint-disable react-native/no-inline-styles */
 import moment from 'moment';
 import React, { useState } from 'react';
 import auth from '@react-native-firebase/auth';
@@ -49,8 +53,8 @@ const Feed = () => {
   const renderPosts = ({ item }) => <PostItem post={item} />;
 
   return (
-    <SafeAreaView style={timelinePage.container}>
-      <View style={timelinePage.container}>
+    <SafeAreaView style={feedPage.container}>
+      <View style={feedPage.container}>
         <Header
           title={selectedTopic}
           onTopicModalSelect={() => setTopicModalFlag(true)}
