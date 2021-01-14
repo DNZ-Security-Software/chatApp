@@ -1,9 +1,9 @@
 import React from 'react';
 import auth from '@react-native-firebase/auth';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import {Login, Sign, Timeline} from './pages';
+import { Login, Signup, Feed } from './pages';
 
 const Stack = createStackNavigator();
 
@@ -18,14 +18,13 @@ function Router() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{headerShown: false}}>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         {hasSession ? (
-          <Stack.Screen name="Timeline" component={Timeline} />
+          <Stack.Screen name="Feed" component={Feed} />
         ) : (
           <>
             <Stack.Screen name="Login" component={Login} />
-            <Stack.Screen name="Sign" component={Sign} />
+            <Stack.Screen name="Signup" component={Signup} />
           </>
         )}
       </Stack.Navigator>
