@@ -14,11 +14,11 @@ export const authStyle = StyleSheet.create({
     color: '#0966B2',
     fontSize: 35,
     fontWeight: 'bold',
-    padding: 30,
+    paddingTop: 30,
   },
 });
 
-export const timelinePage = StyleSheet.create({
+export const feedPage = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#cfd8dc',
